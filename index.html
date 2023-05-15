@@ -4,29 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Kira Banks - Front End Developer & Designer</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="board" id="board">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-    </div>
-    <div class="winning-message" id="winningMessage">
-        <div data-winning-message-text></div>
-        <button id="restartButton">Restart</button>
-    </div>
+    <!-- Navigation -->
+    <header class="header">
+        <h1 class="name"><a href="index.html">Kira Banks_</a></h1>
+        <nav class="nav">
+            <a href="index.html#work">//work</a>
+            <a href="index.html#skills">//skills</a>
+            <a href="index.html#contact">//contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- About -->
+        <div class="about">     
+            <div class="primary aboutCol">
+                <img src="images/paprLogo.png" alt="" class="profilePic">
+            </div>
+            
+            <div class="secondary aboutCol">
+                <h2>Kira Banks</h2>
+                <p>Front End Developer & Designer</p>
+            </div>
+        </div>
+
+        <!-- Work -->
+        <div class="work" id="work">      
+            <div class="workItem">
+                <h2 class="sectionTitle">Work</h2>
+            </div>
+
+            <div class="workItem">
+                <a href="projects/TicTacToe.html" target="_blank">
+                    <img src="images/thumbnail-tictactoe.png" alt="">
+                </a>
+                <h3>TicTacToe Game</h3>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <h2 class="sectionTitle">Skills</h2>
+
+        <!-- Coding Languages -->
+        <div class="skills" id="skills">       
+            <div class="skillItem">
+                <h3>Coding Languages:</h3>
+            </div>
+
+            <div class="skillItem">
+                <img src="images/icn-html.png" alt="">
+                <p>HTML</p>
+            </div>
+
+            <div class="skillItem">
+                <img src="images/icn-css.png" alt="">
+                <p>CSS</p>
+            </div>
+
+            <div class="skillItem">
+                <img src="images/icn-javascript.png" alt="">
+                <p>JavaScipt</p>
+            </div>
+
+            <div class="skillItem">
+                <img src="images/icn-git.png" alt="">
+                <p>Git</p>
+            </div>
+
+            <div class="skillItem">
+                <img src="images/icn-sass.png" alt="">
+                <p>Sass</p>
+            </div>
+        </div>
+
+        <!-- Dev Tools -->
+        <div class="skills" id="skills">        
+            <div class="skillItem">
+                <h3>Dev Tools:</h3>
+            </div>
+
+            <div class="skillItem">
+                <img src="images/icn-visualStudioCode.png" alt="">
+                <p>Visual Studio Code</p>
+            </div>
+            
+            <div class="skillItem">
+                <img src="images/icn-github.png" alt="">
+                <p>GitHub</p>
+            </div>
+
+            <div class="skillItem">
+                <img src="images/icn-terminal.png" alt="">
+                <p>Terminal</p>
+            </div>
+        </div>
+
+        <!-- Design Tools -->
+        <div class="skills" id="skills">        
+            <div class="skillItem">
+                <h3>Design Tools:</h3>
+            </div>
+
+            <div class="skillItem">
+                <img src="images/icn-photoshop.png" alt="">
+                <p>Adobe Photoshop</p>
+            </div>
+
+            <div class="skillItem">
+                <img src="images/icn-procreate.png" alt="">
+                <p>Procreate</p>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <form>
+                <h2 class="sectionTitle">Contact</h2>
+
+                <div class="formContainer">
+                    <div class="formItem">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="formItem">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="formItem">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="formItem">
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h1 class="footerName"><a href="index.html">Kira Banks_</a></h1>
+        <ul class="footerItem">
+            <li class="footerSmall"><a href="index.html">Back to Top</a></li>
+            <li class="footerLarge"><a href="index.html">Home</a></li>
+            <li class="footerLarge"><a href="index.html#work">work</a></li>
+            <li class="footerLarge"><a href="index.html#skills">Skills</a></li>
+            <li class="footerLarge"><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
