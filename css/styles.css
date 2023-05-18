@@ -23,6 +23,7 @@ main {
 
 a {
     text-decoration: none;
+    color: #f2f0f1;
 }
 
 a:visited {
