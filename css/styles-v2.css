@@ -8,23 +8,23 @@
 body {
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    background-image: linear-gradient(#311E2E, #1a191d 25%);
-    color: #f2f0f1;
     font-weight: 400;
+    background-image: linear-gradient(var(--900), var(--black) 25%);
+    color: var(--white);
 }
 
 a {
     text-decoration: none;
-    color: #f2f0f1;
+    color: var(--400);
 }
 
-a:visited {
-    color: #f2f0f1;
-}
+    a:visited {
+        color: var(--400);
+    }
 
-a:hover {
-    color: #F96F5D;
-}
+    a:hover {
+        color: var(--orange);
+    }
 
 ul {
     list-style: none;
@@ -47,6 +47,10 @@ Navigation
 	font-size: 3em;
     font-weight: 700;
 }
+
+    .name a {
+        color: var(--white);
+    }
 
 /* Pulsing Animation on cursor after name */
     .pulse {
@@ -81,7 +85,7 @@ About
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 700;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px var(--black);
 }
 
 #about p {
@@ -133,13 +137,13 @@ button {
     border-radius: 10px;
     padding: 10px 50px;
     font-family: 'Roboto Mono', monospace;
-    background-color: #f2f0f1;
+    background-color: var(--teal);
     font-weight: 400;
     margin-top: 15px;
 }
 
 button:hover {
-    background-color: #F96F5D;
+    background-color: var(--orange);
 }
 
 /* ================================= 
@@ -167,6 +171,16 @@ Footer
 .footerContainer a {
 	font-size: 1em;
 	text-transform: uppercase;
+}
+
+.footerName a,
+.footerContainer a {
+    color: var(--white);
+}
+
+.footerName a:hover,
+.footerContainer a:hover {
+    color: var(--orange);
 }
 
 /* ================================= 
