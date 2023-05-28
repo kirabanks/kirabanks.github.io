@@ -49,7 +49,7 @@ img {
 Navigation
 ==================================== */
 header {
-    margin-bottom: 10%;
+    margin-bottom: 50px;
 }
 
 .name {
@@ -85,7 +85,7 @@ header {
 About
 ==================================== */
 #about {
-    margin-bottom: 50%;
+    margin-bottom: 200px;
 }
 
 .profilePic {
@@ -108,18 +108,18 @@ About
 Work
 ==================================== */
 #work {
-    margin-bottom: 50%;
+    margin-bottom: 150px;
 }
 
 /* ================================= 
 Skills
 ==================================== */
 #skills {
-    margin-bottom: 50%;
+    margin-bottom: 150px;
 }
 
 #skills h2 {
-    margin-bottom: 20%;
+    margin-bottom: 25px;
 }
 
 h3 {
@@ -132,7 +132,7 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
     grid-gap: 20px;
     justify-content: space-evenly;
-    margin-bottom: 15%;
+    margin-bottom: 50px;
 }
 
 .skillItem img {
@@ -150,7 +150,7 @@ h3 {
     text-decoration: none;
     background: transparent;
     padding: 0;
-    font-size: 80%;
+    font-size: 9pt;
     font-family: 'Roboto Mono', monospace;
     width: 12rem;
 }
@@ -222,7 +222,7 @@ h3 {
 Contact
 ==================================== */
 #contact {
-    margin-bottom: 50%;
+    margin-bottom: 150px;
 }
 
 .formItem {
@@ -300,50 +300,34 @@ Media Queries
 ==================================== */
 @media screen and (min-width: 768px) {
     /* ABOUT */
-    #about {
-        margin-bottom: 30%;
-    }
-
     .profilePic {
         max-width: 300px;
     }
 
     /* WORK */
-    #work {
-        margin-bottom: 30%;
-    }
-
     #work img {
-        max-width: 60%;
+        max-width: 450px;
         margin: 0 auto;
     }
 
     /* SKILLS */
-    #skills {
-        margin-bottom: 30%;
-    }
-    
     #skills h2 {
         margin-bottom: 0;
     }
 
     #skills h3 {
-        margin-bottom: 5%;
+        margin-bottom: 25px;
     }
 
     .skillContainer {
         grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
-        margin-bottom: 10%;
+        margin-bottom: 100px;
         justify-content: center;
     }
 
     /* CONTACT */
-    #contact {
-        margin-bottom: 30%;
-    }
-
     input, textarea {
-        width: 60%;
+        width: 450px;
     }
 
     /* Footer
@@ -358,29 +342,11 @@ Media Queries
 }
 
 @media screen and (min-width: 1024px) {
-    /* NAVAGATION */
-    header {
-        margin-bottom: 5%;
-    }
-
-    /* WORK */
-    #work {
-        margin-bottom: 20%;
-    }
-
-    /* SKILLS */
-    #skills {
-        margin-bottom: 15%;
-    }
-    
-    .skillContainer {
-        margin-bottom: 5%;
-    }
-
     /* CONTACT */
-    #contact {
-        margin-bottom: 20%;
+    input, textarea {
+        width: 600px;
     }
+
 }
 
 @media screen and (min-width: 1025px) {
