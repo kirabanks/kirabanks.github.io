@@ -358,7 +358,29 @@ Media Queries
 }
 
 @media screen and (min-width: 1024px) {
+    /* NAVAGATION */
+    header {
+        margin-bottom: 5%;
+    }
+
+    /* WORK */
+    #work {
+        margin-bottom: 20%;
+    }
+
+    /* SKILLS */
+    #skills {
+        margin-bottom: 15%;
+    }
     
+    .skillContainer {
+        margin-bottom: 5%;
+    }
+
+    /* CONTACT */
+    #contact {
+        margin-bottom: 20%;
+    }
 }
 
 @media screen and (min-width: 1025px) {
