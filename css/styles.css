@@ -225,13 +225,22 @@ Contact
     margin-bottom: 50%;
 }
 
+.formItem {
+    margin: 0 auto;
+}
+
 input, textarea {
-    width: 90%;
+    width: 75%;
     padding: 10px;
     border: none;
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin: 0 auto;
 }
 
 #contact button {
@@ -290,6 +299,52 @@ Footer
 Media Queries
 ==================================== */
 @media screen and (min-width: 768px) {
+    /* ABOUT */
+    #about {
+        margin-bottom: 30%;
+    }
+
+    .profilePic {
+        max-width: 300px;
+    }
+
+    /* WORK */
+    #work {
+        margin-bottom: 30%;
+    }
+
+    #work img {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    /* SKILLS */
+    #skills {
+        margin-bottom: 30%;
+    }
+    
+    #skills h2 {
+        margin-bottom: 0;
+    }
+
+    #skills h3 {
+        margin-bottom: 5%;
+    }
+
+    .skillContainer {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+        margin-bottom: 10%;
+        justify-content: center;
+    }
+
+    /* CONTACT */
+    #contact {
+        margin-bottom: 30%;
+    }
+
+    input, textarea {
+        width: 60%;
+    }
 
     /* Footer
     .footerSmall {
