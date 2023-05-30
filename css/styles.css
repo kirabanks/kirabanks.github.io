@@ -85,23 +85,50 @@ header {
 About
 ==================================== */
 #about {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .profilePic {
     max-width: 200px;
     margin: 0 auto;
+    /* Icon Spin */
+    -webkit-animation: rotation 3s infinite linear;
+    /* Shadow */
+    filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, .75));
 }
+
+/* Icon Spin */
+@-webkit-keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    25% {
+      -webkit-transform: rotate(3deg);
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+    }
+    75% {
+      -webkit-transform: rotate(-3deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+    }
+  }
 
 #about h2 {
     font-size: 2em;
     text-transform: uppercase;
     text-shadow: 3px 3px 3px var(--black);
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #about h3 {
     text-transform: uppercase;
     font-size: 1.2em;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* ================================= 
@@ -345,6 +372,15 @@ Media Queries
     /* CONTACT */
     input, textarea {
         width: 600px;
+    }
+
+    /* ABOUT */
+    #about h2 {
+        font-size: 4em;
+    }
+    
+    #about h3 {
+        font-size: 2em;
     }
 
 }
