@@ -162,10 +162,22 @@ h3 {
     margin-bottom: 50px;
 }
 
+.skillItem {
+    border: 4px solid white;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+
 .skillItem img {
     margin: 0 auto;
-    max-width: 50px;
+    max-width: 40px;
     filter: invert(100%);
+}
+
+.skillItem p {
+    font-size: 10pt;
 }
 
 /* Download Resume Button */
