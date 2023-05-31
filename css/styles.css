@@ -292,8 +292,26 @@ label {
     margin-top: 15px;
 }
 
-#contact:hover button {
+#contact button:hover {
     background-color: var(--orange);
+}
+
+.socialContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 50px));
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.socialIcon img {
+    margin: 0 auto;
+    max-width: 40px;
+    filter: invert(100%);
+}
+
+.socialIcon img:hover {
+    filter: invert(79%) sepia(23%) saturate(6559%) hue-rotate(344deg) brightness(96%) contrast(85%);
 }
 
 
