@@ -324,8 +324,7 @@ Footer
     padding: 0 20px 0 20px;
 }
 
-.footer,
-.footerContainer {
+.footer {
     display: flex;
 }
 
@@ -333,22 +332,15 @@ Footer
 	font-size: 1em;
 }
 
-.footerName a, .footerContainer a {
+.footerName a {
 	display: block;
 }
 
-.footerContainer a {
-	font-size: 1em;
-	text-transform: uppercase;
-}
-
-.footerName a,
-.footerContainer a {
+.footerName a {
     color: var(--white);
 }
 
-.footerName a:hover,
-.footerContainer a:hover {
+.footerName a:hover {
     color: var(--orange);
 }
 
@@ -386,16 +378,6 @@ Media Queries
     input, textarea {
         width: 450px;
     }
-
-    /* Footer
-    .footerSmall {
-        display: none;
-    }
-
-    .footerLarge {
-        display: initial;
-        padding: 0 10px;
-    } */
 }
 
 @media screen and (min-width: 1024px) {
@@ -412,9 +394,5 @@ Media Queries
     #about h3 {
         font-size: 2em;
     }
-
-}
-
-@media screen and (min-width: 1025px) {
 
 }
